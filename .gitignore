@@ -1,0 +1,16 @@
+# Project exclude paths
+/.gradle/
+/gameClientFXIDKGOOD/build/
+/gameClientFXIDKGOOD/build/classes/java/main/
+/gameDomain/build/
+/gameDomain/build/classes/java/main/
+/gameNetworking/build/
+/gameNetworking/build/classes/java/main/
+/gameRepo/build/
+/gameRepo/build/classes/java/main/
+/gameREST/build/
+/gameREST/build/classes/java/main/
+/gameServer/build/
+/gameServer/build/classes/java/main/
+/gameService/build/
+/gameService/build/classes/java/main/

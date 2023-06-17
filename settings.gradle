@@ -1,0 +1,10 @@
+rootProject.name = 'Examen12Iun'
+include 'gameDomain'
+include 'gameClient'
+include 'gameNetworking'
+include 'gameServer'
+include 'gameService'
+include 'gameRepo'
+include 'gameREST'
+include 'gameClientFXIDKGOOD'
+

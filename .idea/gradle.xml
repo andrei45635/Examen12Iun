@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/gameClient" />
+            <option value="$PROJECT_DIR$/gameClientFXIDKGOOD" />
+            <option value="$PROJECT_DIR$/gameDomain" />
+            <option value="$PROJECT_DIR$/gameNetworking" />
+            <option value="$PROJECT_DIR$/gameREST" />
+            <option value="$PROJECT_DIR$/gameRepo" />
+            <option value="$PROJECT_DIR$/gameServer" />
+            <option value="$PROJECT_DIR$/gameService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

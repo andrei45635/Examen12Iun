@@ -1,0 +1,25 @@
+16 Jun 2023 16:47:48,972 INFO  org.example.repo.users.UserRepositoryDB 22 <init> - Initializing Repository with {contest.rest.jdbc.url=jdbc:sqlite:C:\Users\GIGABYTE\IdeaProjects\Examen12Iun\examen12iun}
+16 Jun 2023 16:47:48,976 TRACE org.example.repo.users.UserRepositoryDB 28 getAll - Enter
+16 Jun 2023 16:47:48,976 TRACE org.example.utils.JDBCutils 51 getConnection - Enter
+16 Jun 2023 16:47:48,976 TRACE org.example.utils.JDBCutils 26 getNewConnection - Enter
+16 Jun 2023 16:47:48,976 INFO  org.example.utils.JDBCutils 33 getNewConnection - trying to connect to database ... null
+16 Jun 2023 16:47:48,976 INFO  org.example.utils.JDBCutils 34 getNewConnection - user: null
+16 Jun 2023 16:47:48,976 INFO  org.example.utils.JDBCutils 35 getNewConnection - pass: null
+16 Jun 2023 16:47:48,978 ERROR org.example.utils.JDBCutils 44 getNewConnection - java.sql.SQLException: The url cannot be null
+16 Jun 2023 16:47:48,978 TRACE org.example.utils.JDBCutils 60 getConnection - Exit
+16 Jun 2023 16:48:44,758 INFO  org.example.repo.users.UserRepositoryDB 22 <init> - Initializing Repository with {game.jdbc.url=jdbc:sqlite:C:\Users\GIGABYTE\IdeaProjects\Examen12Iun\examen12iun}
+16 Jun 2023 16:48:44,761 TRACE org.example.repo.users.UserRepositoryDB 28 getAll - Enter
+16 Jun 2023 16:48:44,762 TRACE org.example.utils.JDBCutils 51 getConnection - Enter
+16 Jun 2023 16:48:44,762 TRACE org.example.utils.JDBCutils 26 getNewConnection - Enter
+16 Jun 2023 16:48:44,762 INFO  org.example.utils.JDBCutils 33 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\GIGABYTE\IdeaProjects\Examen12Iun\examen12iun
+16 Jun 2023 16:48:44,762 INFO  org.example.utils.JDBCutils 34 getNewConnection - user: null
+16 Jun 2023 16:48:44,762 INFO  org.example.utils.JDBCutils 35 getNewConnection - pass: null
+16 Jun 2023 16:48:44,942 TRACE org.example.utils.JDBCutils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@24bb76e)
+16 Jun 2023 18:25:51,577 INFO  org.example.repo.users.UserRepositoryDB 22 <init> - Initializing Repository with {game.server.port=55588, game.jdbc.url=jdbc:sqlite:C:\Users\GIGABYTE\IdeaProjects\Examen12Iun\examen12iun}
+16 Jun 2023 18:30:26,515 TRACE org.example.repo.users.UserRepositoryDB 28 getAll - Enter
+16 Jun 2023 18:30:26,516 TRACE org.example.utils.JDBCutils 51 getConnection - Enter
+16 Jun 2023 18:30:26,516 TRACE org.example.utils.JDBCutils 26 getNewConnection - Enter
+16 Jun 2023 18:30:26,516 INFO  org.example.utils.JDBCutils 33 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\GIGABYTE\IdeaProjects\Examen12Iun\examen12iun
+16 Jun 2023 18:30:26,516 INFO  org.example.utils.JDBCutils 34 getNewConnection - user: null
+16 Jun 2023 18:30:26,516 INFO  org.example.utils.JDBCutils 35 getNewConnection - pass: null
+16 Jun 2023 18:30:26,735 TRACE org.example.utils.JDBCutils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@ea952fce)

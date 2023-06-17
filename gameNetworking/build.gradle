@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id "com.google.protobuf" version "0.9.2"
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml'  ]
+}
+
+dependencies {
+    implementation project(':gameDomain')
+    implementation project(':gameService')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    runtimeOnly 'io.grpc:grpc-netty-shaded:1.54.1'
+    implementation 'io.grpc:grpc-protobuf:1.54.1'
+    implementation 'io.grpc:grpc-stub:1.54.1'
+    compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
+    //implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.16.3'
+}
+
+test {
+    useJUnitPlatform()
+}

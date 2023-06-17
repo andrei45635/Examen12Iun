@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project (':gameDomain')
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+
+    implementation "org.springframework:spring-context:$springVersion"
+    implementation "org.springframework:spring-jms:$springVersion"
+    implementation "org.apache.activemq:activemq-spring:$activeMQVersion"
+
+    implementation "org.springframework:spring-context:$springVersion"
+
+    implementation "org.apache.activemq:activemq-spring:$activeMQVersion"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

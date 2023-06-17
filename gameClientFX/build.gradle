@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml'  ]
+}
+
+dependencies {
+    implementation project(':gameDomain')
+    implementation project(':gameNetworking')
+    implementation project(':gameService')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation "org.springframework:spring-context:$springVersion"
+    implementation "org.springframework:spring-jms:$springVersion"
+    implementation "org.apache.activemq:activemq-spring:$activeMQVersion"
+    // https://mvnrepository.com/artifact/log4j/log4j
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+mainClassName='com.example.HelloApplication'

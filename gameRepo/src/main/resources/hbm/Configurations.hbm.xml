@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "org.example.Configuration" table = "configurations">
+        <id name = "id" type="int" column = "configurationid">
+            <generator class="increment"/>
+        </id>
+        <property name="posX" type="int" column="posx"/>
+        <property name="posY" type="int" column="posy" />
+        <property name="message" type="string" column="message" />
+    </class>
+</hibernate-mapping>

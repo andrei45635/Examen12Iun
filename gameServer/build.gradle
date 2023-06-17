@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':gameDomain')
+    implementation project(':gameNetworking')
+    implementation project(':gameService')
+    implementation project(':gameRepo')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation "org.springframework:spring-context:$springVersion"
+    implementation "org.springframework:spring-jms:$springVersion"
+    implementation "org.apache.activemq:activemq-spring:$activeMQVersion"
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application{
+    mainClass='org.example.StartRpcServer'
+}
